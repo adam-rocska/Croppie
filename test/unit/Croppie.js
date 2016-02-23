@@ -83,4 +83,29 @@ describe('Croppie', function () {
 
    });
 
+   describe('#get()', function () {
+
+      it('should set scale to 1 if current zoom is infinity.', function () {
+
+      });
+
+      it('should set scale to 1 if current zoom is NaN.', function () {
+
+      });
+
+      it('should return a dictionary which has an entry representing its zoom state.', function () {
+
+      });
+
+      it('should return a dictionary which has an entry for representing the area to crop.', function () {
+
+      });
+
+      it('should default to 0 if any coordinate is negative.', function () {
+
+      });
+
+   });
+
+
 });
