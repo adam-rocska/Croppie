@@ -48,11 +48,21 @@ describe('Croppie', function () {
    describe('#get()', function () {
 
       it('should set scale to 1 if current zoom is infinity.', function () {
-
+         var cropState;
+         
+         testCroppieObject.setZoom(Infinity);
+         cropState = testCroppieObject.get();
+         
+         assert.equal(cropState.zoom, 1);
       });
 
       it('should set scale to 1 if current zoom is NaN.', function () {
-
+         var cropState;
+         
+         testCroppieObject.setZoom(NaN);
+         cropState = testCroppieObject.get();
+         
+         assert.equal(cropState.zoom, 1);
       });
 
       it('should return a dictionary which has an entry representing its zoom state.', function () {
